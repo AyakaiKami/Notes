@@ -25,3 +25,14 @@ dirsearch -u http://dog.htb/
 sudo ffuf -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -u http://dog.htb/FUZZ 
 ```
 
+
+
+### Found a .git folder on the web server:
+- Extract all the files: 
+```bash
+git-dumper http://dog.htb/.git ./git
+```
+- Extract useful information from the index file:
+```bash
+gin index 
+```

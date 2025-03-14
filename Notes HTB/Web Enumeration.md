@@ -26,8 +26,7 @@ sudo ffuf -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -u htt
 ```
 
 
-
-### Found a .git folder on the web server:
+###  A .git folder on the web server:
 - Extract all the files: 
 ```bash
 git-dumper http://dog.htb/.git ./git

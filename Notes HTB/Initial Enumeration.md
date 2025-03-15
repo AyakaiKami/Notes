@@ -8,3 +8,7 @@ nmap -sC -p- -sV 10.129.48.94 -oN nmap.txt
 ```bash
 sudo nmap -sU -p- 10.129.130.131
 ```
+
+## Listening ports:
+- [80/443](WebEnumeration)
+- 

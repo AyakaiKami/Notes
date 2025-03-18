@@ -24,9 +24,14 @@ dirsearch -u http://dog.htb/
 ```bash
 sudo ffuf -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -u http://dog.htb/FUZZ 
 ```
+- Feroxbuster:
+```bash
+feroxbuster -u http://10.129.24.203 -x php txt -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
 
+feroxbuster -u http://10.129.24.203 -x php txt html jpg -w /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt  -C 400,403,404
+```
 
-###  A .git folder on the web server:
+##  A .git folder on the web server:
 - Extract all the files: 
 ```bash
 git-dumper http://dog.htb/.git ./git
@@ -35,3 +40,9 @@ git-dumper http://dog.htb/.git ./git
 ```bash
 gin index 
 ```
+
+## Some servers have "/cgi-bin/", some configurations allow us to access files in that directory. Common extensions:
+- .sh
+- .cgi
+- .pl
+- use other extensions as well

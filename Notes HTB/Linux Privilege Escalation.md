@@ -74,7 +74,7 @@ ls -la /etc/sudoers
 ```bash
 env
 ```
-- IP address might be different:
+- Multiple interfaces:
 ```bash
 ipconfig
 ```

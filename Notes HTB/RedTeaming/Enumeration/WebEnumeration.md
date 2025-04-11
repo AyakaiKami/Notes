@@ -9,6 +9,7 @@ sudo ffuf -w /usr/share/wordlists/seclists/Discovery/DNS/subdomains-top1million-
 
 -fw $w # exclude responses with w words
 -fs $s # exclude by size
+-fc $c # exclude by status code
 ```
 
 ## URI brute-force:
@@ -46,3 +47,8 @@ gin index
 - .cgi
 - .pl
 - use other extensions as well
+
+### BruteForcing parameters:
+```bash
+sudo ffuf -w /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-2.3-small.txt -u 'http://34.159.27.166:30317/index.php?FUZZ=1' -fs 76
+```

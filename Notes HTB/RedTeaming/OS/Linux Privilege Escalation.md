@@ -99,4 +99,4 @@ groups
 ## Important files:
 - /etc/passwd
 - /etc/shadow
-- 
+- maybe there are mails in /var/mail ...

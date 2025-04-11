@@ -5,3 +5,7 @@
 
 ## Always try the exploit, if you think it's right, if the version is vulnerable try it, make your own script
 - the server might be configured to undo your changes (so check if automating the exploitation works)
+
+## Multiple vulnerabilities can be chained for example a stored XSS with a forced read 
+
+## Can use errors to display text for example the contents of a file

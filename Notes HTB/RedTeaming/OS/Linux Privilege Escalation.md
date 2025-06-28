@@ -100,3 +100,7 @@ groups
 - /etc/passwd
 - /etc/shadow
 - maybe there are mails in /var/mail ...
+
+## Check for password managers:
+Examples:
+- pswm in ".local"

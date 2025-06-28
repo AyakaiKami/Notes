@@ -52,3 +52,6 @@ gin index
 ```bash
 sudo ffuf -w /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-2.3-small.txt -u 'http://34.159.27.166:30317/index.php?FUZZ=1' -fs 76
 ```
+
+## Key Ideas:
+- find something forbidden or a folder that won't show the files, try to get more info about it

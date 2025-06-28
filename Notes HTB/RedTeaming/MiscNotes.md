@@ -1,3 +1,4 @@
+# Always understand the technology
 ### If you have a shell from a web server check the following types of files:
 - config files
 - database files (.db)
